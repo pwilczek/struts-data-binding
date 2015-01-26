@@ -8,6 +8,10 @@ public class Hotel {
         System.out.println("Automatic hotel init!");
     }
 
+    public Hotel(String message) {
+        System.out.println(message);
+    }
+
     public String getName() {
         return name;
     }
