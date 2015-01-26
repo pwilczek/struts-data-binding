@@ -4,6 +4,10 @@ public class Hotel {
 
     private String name, city;
 
+    public Hotel() {
+        System.out.println("Automatic hotel init!");
+    }
+
     public String getName() {
         return name;
     }
@@ -19,4 +23,10 @@ public class Hotel {
     public void setCity(String city) {
         this.city = city;
     }
+
+    @Override
+    public String toString() {
+        return "Hotel{" + "name='" + name + '\'' + ", city='" + city + '\'' + '}';
+    }
+
 }
